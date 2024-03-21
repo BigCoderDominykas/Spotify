@@ -26,6 +26,7 @@ public class Synth : MonoBehaviour
             //samples[i] = Mathf.Sin(i / 44100f * Mathf.PI * 2f * frequency) + Mathf.Sin(i / 44100f * Mathf.PI * 2f * 960);
             //samples[i] /= 2f;
             //samples[i] *= Mathf.Sin(i / 44100f * Mathf.PI * 2f * 0.25f);
+            //samples[i] = Mathf.Sin(i / 44100f * Mathf.PI * 2f * frequency) * Mathf.Sin(i / 44100f * Mathf.PI * 2f * frequency / 100f);
 
             samples[i] = Mathf.Sin(i / 44100f * Mathf.PI * 2f * frequency * Mathf.Abs(Mathf.Sin(i / 44100f * Mathf.PI * 2f * 0.2f)));
         }
